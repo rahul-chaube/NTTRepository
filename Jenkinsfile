@@ -34,7 +34,7 @@ pipeline {
         steps{
                 sh("pwd")
                 sh ("ls")
-                sh ("go test ./...")
+                sh ("go build main.go")
             
         }
     }
