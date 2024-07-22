@@ -27,7 +27,7 @@ pipeline {
     stage (" Build "){
         steps{
             dir("NTTRepository"){
-                sh ("ll")
+                sh ("ls")
                 sh ("go build main.go")
             }
         }
