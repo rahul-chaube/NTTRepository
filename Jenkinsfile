@@ -26,7 +26,7 @@ pipeline {
     }
     stage (" Build "){
         steps{
-            dir("DockerStudy/SimpleRestApi"){
+            dir("NTTRepository"){
                 sh ("go build main.go")
             }
         }
