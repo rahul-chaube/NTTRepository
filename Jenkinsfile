@@ -14,17 +14,11 @@ pipeline {
             deleteDir()
         }
     }
-    // stage('Checkout') {
-    //         steps {
-    //             // Checkout code from the repository
-    //             git branch: 'main', url: 'https://github.com/rahul-chaube/NTTRepository.git'
-    //         }
-    // }
-    // stage (" clone repository "){
-    //     steps {
-    //         sh "git clone https://github.com/rahul-chaube/DockerStudy.git"
-    //     }
-    // }
+    stage('Checkout') {
+            steps {
+                git branch: 'main', url: 'https://github.com/rahul-chaube/NTTRepository.git'
+            }
+    }
     stage (" Check Version "){
         steps {
             sh "go version"
