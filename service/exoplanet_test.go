@@ -14,7 +14,7 @@ const (
 var dummydata = map[string]model.Exoplanet{validId: {ID: validId, Name: "XO-2N b", Description: "Test",
 	Distance: 200, Radius: 1.6, Mass: 0.62, Type: "GasGiant"}}
 
-func TestExoplanetService_EstimateFuel(t *testing.T) {
+func TestExoplanetServiceEstimateFuel(t *testing.T) {
 	type fields struct {
 		Exoplanets map[string]model.Exoplanet
 	}
@@ -71,7 +71,7 @@ func TestExoplanetService_EstimateFuel(t *testing.T) {
 	}
 }
 
-func TestExoplanetService_DeleteExoplanet(t *testing.T) {
+func TestExoplanetServiceDeleteExoplanet(t *testing.T) {
 	type fields struct {
 		Exoplanets map[string]model.Exoplanet
 	}
@@ -86,7 +86,7 @@ func TestExoplanetService_DeleteExoplanet(t *testing.T) {
 		wantErr bool
 	}{
 		{
-			name: "Positive case ",
+			name: "Positive case",
 			fields: fields{
 				Exoplanets: dummydata,
 			},
@@ -125,7 +125,7 @@ func TestExoplanetService_DeleteExoplanet(t *testing.T) {
 	}
 }
 
-func TestExoplanetService_UpdateExoplanet(t *testing.T) {
+func TestExoplanetServiceUpdateExoplanet(t *testing.T) {
 	type fields struct {
 		Exoplanets map[string]model.Exoplanet
 	}
@@ -182,7 +182,7 @@ func TestExoplanetService_UpdateExoplanet(t *testing.T) {
 	}
 }
 
-func TestExoplanetService_GetExoplanet(t *testing.T) {
+func TestExoplanetServiceGetExoplanet(t *testing.T) {
 	type fields struct {
 		Exoplanets map[string]model.Exoplanet
 	}
@@ -196,7 +196,6 @@ func TestExoplanetService_GetExoplanet(t *testing.T) {
 		want    model.Exoplanet
 		wantErr bool
 	}{
-		// TODO: Add test cases.
 		{
 			name: "Positive case",
 			fields: fields{
@@ -237,7 +236,7 @@ func TestExoplanetService_GetExoplanet(t *testing.T) {
 	}
 }
 
-func TestExoplanetService_ListExoplanet(t *testing.T) {
+func TestExoplanetServiceListExoplanet(t *testing.T) {
 	type fields struct {
 		Exoplanets map[string]model.Exoplanet
 	}
@@ -266,7 +265,7 @@ func TestExoplanetService_ListExoplanet(t *testing.T) {
 	}
 }
 
-func TestExoplanetService_CreateExoplanet(t *testing.T) {
+func TestExoplanetServiceCreateExoplanet(t *testing.T) {
 	type fields struct {
 		Exoplanets map[string]model.Exoplanet
 	}

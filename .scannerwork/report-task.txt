@@ -1,0 +1,6 @@
+projectKey=NTTData
+serverUrl=http://localhost:9000
+serverVersion=10.6.0.92116
+dashboardUrl=http://localhost:9000/dashboard?id=NTTData
+ceTaskId=77bba13a-05b8-4d5f-8b7e-96cb8cb35919
+ceTaskUrl=http://localhost:9000/api/ce/task?id=77bba13a-05b8-4d5f-8b7e-96cb8cb35919
