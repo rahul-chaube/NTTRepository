@@ -33,7 +33,7 @@ pipeline {
 
     stage ("Final stage"){
         steps{
-                sh ("Completed")
+                echo ("Completed")
             
         }
     }
