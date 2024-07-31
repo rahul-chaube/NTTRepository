@@ -1,5 +1,8 @@
 pipeline {
     agent any
+    triggers{
+        cron("* * * * *")
+    }
       environment {
         GO_VERSION = '1.22.0'  // Specify the Go version
         GO_HOME = "/usr/local/go"
