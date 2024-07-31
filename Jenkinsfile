@@ -1,5 +1,11 @@
 pipeline {
     agent any
+    triggers{
+     githubPullRequest {
+            cron('* * * * *') // Check for new PRs every minute
+            allowMembersOfWhitelistedOrgsAsAdmin(true) // Optional: allow members of whitelisted orgs as admins
+        }
+    }
       environment {
         GO_VERSION = '1.22.0'  // Specify the Go version
         GO_HOME = "/usr/local/go"
