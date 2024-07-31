@@ -2,6 +2,7 @@ pipeline {
     agent any
     triggers{
      githubPullRequest {
+             
             cron('* * * * *') // Check for new PRs every minute
             allowMembersOfWhitelistedOrgsAsAdmin(true) // Optional: allow members of whitelisted orgs as admins
         }
