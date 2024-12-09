@@ -33,9 +33,14 @@ pipeline {
     }
     stage (" Build "){
         steps{
-                sh("pwd")
-                sh ("ls")
                 sh ("go build main.go")
+            
+        }
+    }
+
+    stage ("Final stage"){
+        steps{
+                echo ("Completed")
             
         }
     }
